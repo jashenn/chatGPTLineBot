@@ -13,12 +13,12 @@ namespace isRock.Template
         [HttpPost]
         public IActionResult POST()
         {
-            var AdminUserId = "__________Line_Admin_User_ID________________";
+            var AdminUserId = "__________jashenn________________";
 
             try
             {
                 //設定ChannelAccessToken
-                this.ChannelAccessToken = "______________Line_Channel_Access_Token______________";
+                this.ChannelAccessToken = "______________YQ33SRthmGhUFB8np0JIwES1hHEm+3Md7waWfAuhLY/F2xkDfDl4b0Z1YBxudL6u2P96iygT0ghEN9EWSWUFJQQZR/0Lb0XratiLDyU3n0WkllueM9WPsnmzZHfpseOPb05NcqAVQBC8u3zVFkA1/AdB04t89/1O/w1cDnyilFU=______________";
                 //配合Line Verify
                 if (ReceivedMessage.events == null || ReceivedMessage.events.Count() <= 0 ||
                     ReceivedMessage.events.FirstOrDefault().replyToken == "00000000000000000000000000000000") return Ok();
